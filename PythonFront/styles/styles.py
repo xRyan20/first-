@@ -21,20 +21,23 @@ BASE_STYLE = {
     "font_family":"Poppins-Light",
     "background_color": Color.BACKGROUND.value,
     rx.button: {
-        "width":"100%",
-        "height":"100%",
-        "display":"block",
-        "padding":Spacer.SMALL.value,
+        "width": "100%",
+        "height": "100%",
+        "padding": Spacer.SMALL.value,
         "border_radius": Spacer.DEFAULT.value,
+        "color": TextColor.HEADER.value,
         "background_color": Color.CONTENT.value,
-        "_hover":{
-            "background_color": Color.SECONDARY.value,
+        "white_space": "normal",
+        "text_align": "start",
+        "--cursor-button": "pointer",
+        "_hover": {
+            "background_color": Color.SECONDARY.value
         }
     },
     rx.link:{
-        "text_decoration":"none",
-        "_hover":{},
-
+        "color": TextColor.BODY.value,
+        "text_decoration": "none",
+        "_hover": {}
     }
 }
 

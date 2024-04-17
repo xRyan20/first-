@@ -21,5 +21,7 @@ def futter()-> rx.Component:
         ),
         margin_bottom=styles.Spacer.BIG.value,
         padding_bottom=styles.Spacer.BIG.value,
+        padding_x=styles.Spacer.BIG.value,
+        spacing='2',
         color=TextColor.FOOTER.value
     )

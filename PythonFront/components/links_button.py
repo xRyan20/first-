@@ -12,12 +12,21 @@ def links_button(text: str, body:str, image: str, url: str) -> rx.Component:
                     margin=styles.Spacer.MEDIUM.value
                 ),
                 rx.vstack(
-                    rx.text(text, style=styles.button_title_style),
-                    rx.text(body, style=styles.button_body_style),
+                    rx.text(
+                        text, 
+                        size='1',
+                        style=styles.button_title_style),
+                    rx.text(
+                        body,
+                        size='1',
+                        style=styles.button_body_style),
                     spacing="1",
                     align_items="start",
-                    margin=styles.Spacer.ZERO.value
-                )
+                    padding_y=styles.Spacer.SMALL.value,
+                    padding_right=styles.Spacer.SMALL.value,
+                ),
+                align="center",
+                width="100%"
             )
         ),
         href=url,
